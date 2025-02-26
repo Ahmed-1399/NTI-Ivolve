@@ -24,8 +24,8 @@ ssh -i ~/.ssh/httpd_key student@192.168.1.6
 
 # Configure Ansible [ansible.cfg, inventory, playbook.yml, index.html]
 ```bash
-mkdir ansible
-cd ansible
+mkdir httpd
+cd httpd
 touch ansible.cfg inventory playbook.yml index.html
 
 ----------------------------------------------
