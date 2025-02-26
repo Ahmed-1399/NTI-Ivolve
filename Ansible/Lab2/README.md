@@ -2,6 +2,11 @@
 ## Architecture
 ![Architectire](./assets/Lab2.png)
 
+# Check that python & ansible installed
+```bash
+python --version
+ansible --version
+```
 
 # Configur SSH
 ```bash
