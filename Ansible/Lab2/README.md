@@ -49,11 +49,11 @@ become_user=root
 # Include IPs
 vim inventory
 [webserver]
-myweb ansible_host=192.168.1.6 ansible_user=student
+myweb ansible_host=192.168.1.6 ansible_user=student ansible_private_key_file=~/.ssh/httpd_key
 -----------------------------------------------------------------------------------------------------
 ```
 
-# Firstlt Check Connection "before move to playbook.yml"
+# Firstly Check Connection "before move to playbook.yml"
 ```bash
 ansible-inventory -i ~/httpd/inventory --list
 ansible -i ~/httpd/inventory myweb -m ping
