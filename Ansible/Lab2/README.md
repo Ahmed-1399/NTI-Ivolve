@@ -110,7 +110,6 @@ ansible -i ~/httpd/inventory myweb -m ping
 ```bash
 # Check Syntax "if there is any Errors"
 ansible-playbook -i ~/httpd/inventory --syntax-check playbook.yml
-```
 
 # Run "Playbook" without make any actual changes on the Hosts
 ansible-playbook -i ~/httpd/inventory --check playbook.yml
@@ -118,7 +117,7 @@ ansible-playbook -i ~/httpd/inventory --check playbook.yml
 # Run on Production
 ```bash
 ansible-playbook -i ~/httpd/inventory playbook.yml
-``
+```
 
 # Errors that faced me and how i solved it
 ```bash
