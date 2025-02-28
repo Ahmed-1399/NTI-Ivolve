@@ -42,7 +42,7 @@ Create 2-SGs allow Only SSH
     - 2. SG-private-instance attach with private-instance
             SG allow SSH(Inbound) from only Public-instance
 ```
-![Architecture](./assets/EC2.png)
+![Architecture](./assets/SGs.png)
 
 
 # Output
