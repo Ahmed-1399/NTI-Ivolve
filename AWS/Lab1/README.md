@@ -42,7 +42,6 @@
 
 # 5. from Security credentials 
 #        Create access key  --->  (CLI)  --->  Download .csv file
---------------------------------------------------
 ```
 ##
 ![Architecture](./assets/admin-2-prog.png)
@@ -56,7 +55,7 @@ aws iam list-groups --query "Groups[*].GroupName"
 ![Architecture](./assets/admin-2-prog-output.png)
 
 
-## dev-userg
+## dev-user
 ```bash
 # 1. Search for "IAM"
 # 2. Create User called "dev-user" with "Programmatic & Console access"
@@ -76,4 +75,4 @@ aws s3 ls
 aws ec2 describe-instances --query "Reservations[*].Instances[*].InstanceId"
 ```
 ### Output
-![Architecture](./assets/admin-2-prog-output.png)
+![Architecture](./assets/dev-user-output.png)
