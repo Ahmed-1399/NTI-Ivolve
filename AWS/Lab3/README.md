@@ -43,7 +43,7 @@ Create 2-Instance
 ```
 ![Architecture](./assets/EC2.png)
 
-# ginx-instance User Data
+# Nginx-instance User Data
 ```bash
 #!/bin/bash
 yum update -y
