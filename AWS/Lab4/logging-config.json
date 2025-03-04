@@ -1,0 +1,6 @@
+{
+    "LoggingEnabled": {
+        "TargetBucket": "ivolve-s3-demo-bucket",
+        "TargetPrefix": "logs/"
+    }
+}
