@@ -81,6 +81,7 @@ When CPUUtilization > 70% CloudWatch will send alert to SNS
 Status (Pending)  ----->  When CPUUtilization > 70% CloudWatch will send alert to SNS & SNS will sent message to "Email"
 ```
 ![Architectire](./assets/SNS.png)
+![Architectire](./assets/SNS-Notification.png)
 
 
 # Destroy
