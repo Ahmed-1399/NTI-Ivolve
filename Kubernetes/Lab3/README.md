@@ -1,4 +1,4 @@
-# Lab2
+# Lab3
 ![Architecture](./assets/Lab3.png)
 
 # Create Deployment with 1 Replica
