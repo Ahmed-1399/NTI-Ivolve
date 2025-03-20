@@ -1,0 +1,14 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: nginxpolicy
+  namespace: nginx-ns
+spec:
+  podSelector:
+    matchLabels:
+      app: nginx
+  policyTypes:
+  - Ingress
+  ingress:
+  - from:   # Traffic from Pods to Others
+    - podSelector: {}   # Allow all Pods to access each Other with label [app: nginx] in the [same namespace]

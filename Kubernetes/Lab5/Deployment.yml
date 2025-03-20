@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginxdeploy
+  namespace: nginx-ns
+spec:
+  replicas: 5  # Must not exceed ResourceQuota limit
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: ahmed1399/nginx-ivolve:v1
+        ports:
+        - name: myport
+          containerPort: 80
+        resources:  # Correct indentation for resource requests/limits
+          requests:
+            cpu: "250m"
+            memory: "256Mi"
+          limits:
+            cpu: "500m"
+            memory: "512Mi"

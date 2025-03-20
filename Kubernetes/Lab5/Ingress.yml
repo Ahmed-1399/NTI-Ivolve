@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nginxingress
+  namespace: nginx-ns
+spec:
+  ingressClassName: nginx   # Ingress-Controller
+  rules:
+  - host: nginx.ivolve.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: nginxservice
+            port:
+              number: 80
