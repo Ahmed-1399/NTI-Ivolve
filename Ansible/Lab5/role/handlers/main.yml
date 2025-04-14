@@ -1,0 +1,7 @@
+---
+# handlers file for role
+- name: restart httpd
+  service:
+    name: httpd
+    state: restarted
+  become: yes

@@ -1,0 +1,11 @@
+---
+plugin: amazon.aws.aws_ec2   # this Plugin special of Ansible can treat with AWS EC2s
+regions:
+  - us-east-1    # Can add more than one region 
+filters:
+  instance-state-name: running   # Use only Running Instances
+keyed_groups:        # Build Groups in Inventory based on the Value of "Tag" called name
+  - key: tags.Name   # if you have EC2 (Name=webserver1) will add to group (name_webserver1)
+    prefix: name
+# hostnames:
+#   - public_ip_address
